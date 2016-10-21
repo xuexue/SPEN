@@ -1,0 +1,5 @@
+clean*
+noisy*
+imglist.txt
+*.swo
+*.swp
