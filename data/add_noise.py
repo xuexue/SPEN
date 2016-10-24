@@ -5,9 +5,10 @@ Write a list of "<clean> <noisy>\n" pngs in a file
 
 After this can run:
 
-    th scripts/im_pairs_to_torch.lua data/imglist.txt 5000 data/thimgs 5000
+    th scripts/im_pairs_to_torch.lua data/imglist.txt 5000 data/thimgs 4000
 
-From the main SPEN path
+From the main SPEN path. This will create 2 files, one with 4000 and the other
+with 1000 imgs pairs for train and test.
 '''
 
 import numpy

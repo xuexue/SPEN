@@ -7,7 +7,7 @@ mkdir $d
 
 resultsFileDir=$d/results
 mkdir $resultsFileDir
-dataOptions="-trainList XXX -testList XXX  -outDir $resultsFileDir -modelFile $d/model-"
+dataOptions="-trainList data/thimgs-0.t7 -testList data/thimgs-1.t7 -outDir $resultsFileDir -modelFile $d/model-"
 
 #use this sort of thing if you want to resume an existing training job
 #modelOptions="-initFullNet <prev_expt_dir>/model--updateAll-400.model"
