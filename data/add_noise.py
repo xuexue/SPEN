@@ -2,6 +2,12 @@
 Add noise to pngs in a folder;
 Bave to another folder;
 Write a list of "<clean> <noisy>\n" pngs in a file
+
+After this can run:
+
+    th scripts/im_pairs_to_torch.lua data/imglist.txt 5000 data/thimgs 5000
+
+From the main SPEN path
 '''
 
 import numpy
@@ -30,8 +36,8 @@ if __name__ == '__main__':
     for (dirpath, dirnames, filenames) in os.walk(cleandir):
         for imgfile in filenames:
             if imgfile.endswith('.png'):
-                clean_name = os.path.join(cleandir, imgfile)
-                noisy_name = os.path.join(noisydir, imgfile)
+                clean_name = os.path.join('data/', cleandir, imgfile)
+                noisy_name = os.path.join('data/', noisydir, imgfile)
                 add_noise(clean_name, noisy_name)
                 png_list_file.write('%s %s\n' % (clean_name, noisy_name))
 

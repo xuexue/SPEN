@@ -1,5 +1,5 @@
 local gm = require 'graphicsmagick'
-package.path = package.path .. ';../../torch-util/?.lua'
+package.path = package.path .. ';../torch-util/?.lua'
 require 'Util'
 require 'xlua'
 

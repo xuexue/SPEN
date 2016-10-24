@@ -1,7 +1,9 @@
-log_dir=XXX
-d=XXX/`date | sed 's| |_|g'`
+log_dir=denoise_lo
+d=denoise_log/`date | sed 's| |_|g'`
 log=$d/log.txt
 mkdir $d
+
+#th scripts/im_pairs_to_torch.lua data/imglist.txt 5000 1 5000
 
 resultsFileDir=$d/results
 mkdir $resultsFileDir
